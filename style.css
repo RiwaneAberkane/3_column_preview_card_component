@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+p, button{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* --------------------- */
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 160px;
+    align-items: center;
+}
+
+.card{
+    width: 22%;
+    min-height: 440px;
+    padding: 30px 70px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.card2{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0px;
+}
+
+img{
+    padding-bottom: 30px;
+}
+
+h2, p{
+    color: white;
+}
+
+h2{
+    font-size: 45px;
+    padding-bottom: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+
+/* BUTTON -------------- */
+
+button{
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    height: 40px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card1 button{
+    color: hsl(31, 77%, 52%);
+}
+
+.card1 button:hover{
+    background-color:hsl(31, 77%, 52%);
+    color: white;
+    border: white solid;
+}
+
+.card2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.card2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: white solid;
+}
+
+.card3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+.card3 button:hover{
+    background-color:hsl(179, 100%, 13%);
+    color: white;
+    border: white solid;
+
+}
+
+/* MEDIA ------------------ */
+
+
+@media(max-width: 1020px){
+  .card{
+    width: 32%;
+  }
+}
+
+@media(max-width: 705px){
+    .container{
+        flex-direction: column; 
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .card{
+        width: 300px;
+    }
+
+    .card1{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card3{
+        border-radius: 0 0 10px 10px;
+    }
+}
